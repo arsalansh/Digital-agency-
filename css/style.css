@@ -1,0 +1,597 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    transition: 0.5s;
+}
+
+html {
+    font-size: 16px;
+}
+
+:root {
+    --green: hsl(168deg 83% 42%);
+    --grey: rgb(109, 108, 111);
+    --lightGrey: #9fa6ac;
+    --light-grey: rgb(109 108 111 / 9%);
+    --blue: hsl(238deg 74% 14%);
+    --yellow: #ffc100;
+    --lightYellow: #fff6d7;
+    --lightPurple: #ebdcf9;
+    --lightBlue: #ddf6fd;
+    --lightGreen: #dcf7e8;
+    --lightOrange: #f8e5e1;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bg-1 {
+    background-image: url('../images/bg.png');
+    background-position: center;
+    background-size: cover;
+    height: 95vh;
+
+}
+
+.naigation .logo {
+    width: 120px;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.naigation {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.naigation a {
+    display: inline-block;
+    color: var(--grey);
+    margin-top: 10px;
+    padding: 0 10px;
+    font-size: 1.1rem;
+}
+
+.contact-sections a,
+.contact-sections2 a {
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 9px 20px;
+    margin: 0 5px;
+    color: inherit;
+    display: inline-block;
+}
+
+.contact-sections2 {
+    margin-top: 30px;
+}
+
+.pricingCard.pricing h4 {
+    font-size: 1.2rem;
+    letter-spacing: 0.8px;
+}
+
+.pricingCard.pricing h4,
+.pricingCard.pricing h5 {
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+.pricingCard.pricing p {
+    font-size: 1.05rem;
+    color: var(--grey);
+    padding: 4px 0;
+}
+
+.nav-links a:hover {
+    color: var(--yellow);
+}
+
+.contact-sections a:hover {
+    background-color: var(--blue);
+    color: #fff;
+}
+
+.contact-sections2 a:hover {
+    background-color: var(--green);
+    color: #fff;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-parent {
+    display: flex;
+
+}
+
+/* hero sec */
+.hero-section {
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+}
+
+.hero-section img {
+    width: 70%;
+}
+
+.hero-section .left-section,
+.right-section {
+    flex: 50%;
+}
+
+.right-section h3,
+.trusted-clients h3 {
+    color: var(--grey);
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+}
+
+.right-section h1 {
+    font-size: 50px;
+    text-transform: capitalize;
+    font-weight: 800;
+    margin-bottom: 10px;
+    line-height: 1;
+    letter-spacing: 0.5px;
+}
+
+.contact-sections .start-trail {
+    margin-top: 20px;
+}
+
+.right-section h4 {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: var(--grey);
+}
+
+.right-section h2 {
+    margin-bottom: 20px;
+}
+
+.trusted-clients {
+    background-color: var(--light-grey);
+}
+
+/* trusted */
+.trusted-clients h3 {
+    text-align: center;
+}
+
+.trsuted-customers-logos {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.trsuted-customers-logos img {
+    width: 10%;
+}
+
+/* services */
+.right-section p.one {
+    color: white;
+    background: var(--green);
+    padding: 9px;
+    border-radius: 10px;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.left-section.img-100 img {
+    width: 500px;
+    max-width: 100%;
+    margin-bottom: 0;
+    height: 100%;
+}
+
+.center {
+    text-align: center;
+}
+
+/* automated */
+
+.cards,.trsuted-clients-logos {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
+
+.card,
+.pricingCard {
+    flex-basis: 28%;
+    padding: 25px;
+    border-radius: 15px;
+    position: relative;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.pricingCard.pricing .popular h4 {
+    transform: rotate(-89deg);
+    background: var(--yellow);
+    display: inline-block;
+    padding: 8px 20px;
+    position: absolute;
+    left: 0;
+    font-size: 1.1rem;
+    top: -3px;
+    border-radius: 5px;
+}
+
+.card:first-child {
+    background-color: var(--lightYellow);
+}
+
+.card:nth-child(2) {
+    background-color: var(--lightPurple);
+}
+
+.card:nth-child(3) {
+    background-color: var(--lightBlue);
+}
+
+.card:nth-child(4) {
+    background-color: var(--lightGreen);
+}
+
+.card:nth-child(5),
+.card:nth-child(6) {
+    background-color: var(--lightOrange);
+}
+
+.card h5 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.card img {
+    width: 43px;
+    position: absolute;
+    top: -21px;
+}
+
+/* ready to get */
+.ready-to-get {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: space-between;
+}
+
+.ready-to-get h2 {
+    font-size: 1.8rem;
+}
+
+.ready-to-get i.fa.fa-rocket {
+    font-size: 1.6rem;
+    color: var(--yellow);
+    margin-right: 10px;
+}
+
+/* testimonials */
+.testimonial-card h3 {
+    color: var(--green);
+}
+
+.right-section .testimonial-card {
+    padding: 5%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.testimonial {
+    display: flex;
+    height: 100%;
+}
+
+.testimonial .left-section>img {
+    width: 60% !important;
+}
+
+.testimonial .left-section {
+    text-align: right;
+
+}
+/* clients */
+.clients{
+    flex-basis: 15%;
+    padding: 25px;
+    border-radius: 15px;
+    position: relative;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+
+/*  */
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background: #f2f5f7;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 991px) {
+    html {
+        font-size: 16px;
+    }
+
+    .container {
+        /* padding: 0 10px; */
+    }
+
+    nav {
+
+        z-index: 3;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        transition: all 0.7s ease;
+    }
+
+    .logo {
+
+        text-align: center;
+    }
+
+    .logo img {
+        margin-left: 20px;
+        width: 10rem;
+    }
+
+    /*Styling Links*/
+    .nav-links {
+        display: flex;
+        list-style: none;
+        width: 88vw;
+        padding: 0 0.7vw;
+        justify-content: space-evenly;
+        align-items: center;
+        text-transform: uppercase;
+    }
+
+    .hero-section {
+        margin-top: 50px;
+        padding: 0 10px;
+    }
+
+    .naigation {
+        padding: 10px;
+    }
+
+    /*Styling Hamburger Icon*/
+    .hamburger div {
+        width: 30px;
+        height: 3px;
+        background: var(--blue);
+        margin: 5px;
+        transition: all 0.3s ease;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    /*Stying for small screens*/
+    @media screen and (max-width: 991px) {
+        .bg-1 {
+            height: 100vh;
+        }
+
+        .hamburger {
+            display: block;
+            position: absolute;
+            cursor: pointer;
+            right: 2%;
+            top: 30px;
+            transform: translate(-5%, -50%);
+            z-index: 99999999999999;
+            transition: all 0.7s ease;
+        }
+
+        .nav-links a {
+            color: #000;
+
+        }
+
+        .nav-links {
+            position: fixed;
+            right: -33px;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            background-color: var(--yellow);
+            width: 100%;
+            flex-direction: column;
+            clip-path: circle(50px at 90% -20%);
+            -webkit-clip-path: circle(50px at 90% -10%);
+            transition: all 1s ease-out;
+            /* pointer-events: none; */
+            cursor: pointer;
+        }
+
+        .nav-links.open,
+        .contact-sections.open {
+            clip-path: circle(1000px at 90% -10%);
+            /* -webkit-clip-path: circle(1000px at 90% -10%); */
+            pointer-events: all;
+            -webkit-clip-path: circle(1000px at 90% 29%);
+        }
+
+        .card {
+            flex-basis: 33%;
+
+        }
+
+    }
+
+    @media screen and (max-width: 768px) {
+        html {
+            font-size: 15px;
+        }
+
+        .bg-1 {
+            height: 100%;
+        }
+
+        .hero-section .left-section,
+        .right-section {
+            flex: 100%;
+        }
+
+        .left-section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .hero-section {
+            margin: 50px 0;
+
+        }
+
+        .hero-section {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .hero-section img {
+            width: 50%;
+        }
+
+        .right-section.order-2 {
+            order: 2;
+        }
+
+        .card,
+        .pricingCard {
+            flex-basis: 35%;
+        }
+
+        .testimonial .left-section img {
+            height: 100%;
+
+        }
+
+        .testimonial .left-section {
+            width: auto;
+            height: auto;
+            max-height: fit-content;
+            margin-top: 30px;
+            text-align: center;
+        }
+        .testimonial {
+            height: 100%;
+        }
+        .ready-to-get {
+            flex-direction: column;
+            align-items: center;
+            font-size: 1rem;
+            padding: 0 10px;
+        }
+        .ready-to-get h2 {
+            margin-bottom: 20px;
+        }
+    }
+
+    @media screen and (max-width: 479px) {
+        html {
+            font-size: 15px;
+        }
+
+        .container {
+            padding: 50px 10px;
+        }
+
+        .naigation {
+            padding: 10px;
+        }
+
+        .hero-section {
+            margin-top: 0px;
+            height: auto;
+        }
+
+        .hero-section img {
+            width: 70%;
+        }
+
+        .left-section.img-100 img {
+            width: 80%;
+            height: 80%;
+        }
+
+        .card {
+            flex-basis: 80%;
+
+        }
+
+        .pricingCard {
+            flex-basis: 80%;
+        }
+
+        .pricingCard:nth-child(2) {
+            margin-top: 20px;
+        }
+    }
+
+    /*Animating Hamburger Icon on Click*/
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .line2 {
+        transition: all 0.7s ease;
+        width: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
